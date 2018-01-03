@@ -104,6 +104,7 @@ console.log('Turn off the lights!');
 ### Functions
 
 ```javascript
+//Function expression is used to declare a function
 () => //arrow function syntax that indicates a variable will store a function
 let calculatorIsOn = false;
 
@@ -122,4 +123,12 @@ pressPowerButton();
 
 pressPowerButton();
 // Output: Calculator turning off.
+
+//function declaration can also create a function just with different syntax
+function square (number) {
+  return number * number; 
+}
+
+console.log(square(5));
+// Output: 25.
 
