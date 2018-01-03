@@ -95,5 +95,31 @@ switch (groceryItem) {
     break;
 }
 
+//Ternary operator is another replacement for if/else
 
+isNightTime ? 
+console.log('Turn on the lights!') : 
+console.log('Turn off the lights!');
+```
+### Functions
+
+```javascript
+() => //arrow function syntax that indicates a variable will store a function
+let calculatorIsOn = false;
+
+const pressPowerButton = () => { //put parameters in ()
+  if (calculatorIsOn) {
+    console.log('Calculator turning off.');
+    calculatorIsOn = false;
+  } else {
+    console.log('Calculator turning on.');
+    calculatorIsOn = true;
+  }
+};
+
+pressPowerButton();
+// Output: Calculator turning on.
+
+pressPowerButton();
+// Output: Calculator turning off.
 
