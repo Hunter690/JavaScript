@@ -131,4 +131,24 @@ function square (number) {
 
 console.log(square(5));
 // Output: 25.
+```
 
+### Loops
+
+`for` loop syntax:
+
+```javascript
+for (init_value; max_value; incrementation_value) {
+}
+```
+
+### Data Structures
+
+`let array_name = [thing_one, thing_two, thing_n]; //creates an array with thing_one through thing_n;`
+`array_name[index] = new_value;`
+`.push()` adds items to the end of an array
+`.pop()` removes the last item of an array
+`.shift()` removes the first item of an array
+`.unshift()` adds element(s) to the beginning of an array
+`.slice(init_index, final_index)` creates a new array with the items from in between the index
+[Method Library](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
