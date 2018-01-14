@@ -32,7 +32,7 @@ multiline comment
 const var_name = ; //const stands for constant and creates a variable with a value that cannot change
 //camelCasing is when each new word begins with a capitalized letter
 let var_name = ;
-var_name = ;
+var_name = ; //resets the variable to another value
 //let var allows for the value that var_name has to be changed
 //if a let var is not set to a value, it becomes undefined
 let var_name;
@@ -58,7 +58,10 @@ console.log(`My name is ${myName}. My favorite city is ${myCity}.`);
 !==
 &&
 ||
+
+typeof //tells what data type a variable is
 ```
+
 
 ### Control Flow
 
@@ -138,11 +141,21 @@ console.log(square(5));
 `for` loop syntax:
 
 ```javascript
-for (init_value; max_value; incrementation_value) {
+for (start_condition; stop_condition; incrementation_value) {
+}
+```
+
+`while` loop syntax:
+
+```javascript
+while (condition) {
+  // code block that loops until condition is false
 }
 ```
 
 ### Data Structures
+
+[Method Library](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 `let array_name = [thing_one, thing_two, thing_n]; //creates an array with thing_one through thing_n;`
 `array_name[index] = new_value;`
@@ -151,4 +164,95 @@ for (init_value; max_value; incrementation_value) {
 `.shift()` removes the first item of an array
 `.unshift()` adds element(s) to the beginning of an array
 `.slice(init_index, final_index)` creates a new array with the items from in between the index
-[Method Library](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+`.forEach()` executes the same code on each element of an array
+Ex.
+
+```javascript
+let groceries = ['whole wheat flour', 'brown sugar', 'salt', 'cranberries', 'walnuts']; 
+
+groceries.forEach(function(groceryItem) {
+  console.log(' - ' + groceryItem);
+});
+//OR
+groceries.forEach(groceryItem => console.log(' - ' + groceryItem));
+
+.map() //iterates through array and allows programmer to change elements  
+//Ex. 
+let numbers = [1, 2, 3, 4, 5]; 
+
+let bigNumbers = numbers.map(function(number) {
+  return number * 10;
+});
+//OR
+let bigNumbers = numbers.map(numbers => numbers * 10);
+
+.filter() //returns a new array with indexes that meet a condition
+//Ex. 
+let words = ['chair', 'music', 'pillow', 'brick', 'pen', 'door']; 
+
+let shortWords = words.filter(function(word) {
+  return word.length < 6;
+});
+//OR
+let shortWords = words.filter(word => word.length < 6);
+
+.some(condition) //returns true if condition is met atleast once
+.every() //returns true if each index meets the condition
+```
+
+### Objects
+
+- Objects are dictionaries, they store values using a key
+Ex.
+```javascript
+let restaurant = {
+  name: 'Italian Bistro',
+  seatingCapacity: 120,
+  hasDineInSpecial: true,
+  entrees: ['Penne alla Bolognese', 'Chicken Cacciatore', 'Linguine Pesto']
+};
+//access a key by taking the variable_name.key_name or variable_name['key_name']
+//add or replace a key in an object: variable_name.new_key_name = value
+//a function in a key is known as a method
+//Ex.
+const restaurant = {
+  name: 'Italian Bistro',
+  seatingCapacity: 120,
+  hasDineInSpecial: true,
+  entrees: ['Penne alla Bolognese', 'Chicken Cacciatore', 'Linguine pesto'],
+  openRestaurant: () => {
+    return 'Unlock the door, flip the open sign. We are open for business!';
+  },
+};
+//OR
+const restaurant = {
+  name: 'Italian Bistro',
+  seatingCapacity: 120,
+  hasDineInSpecial: true,
+  entrees: ['Penne alla Bolognese', 'Chicken Cacciatore', 'Linguine pesto'],
+
+  openRestaurant() {
+    return 'Unlock the door, flip the open sign. We are open for business!';
+  },
+};
+//if a method inside of a dictionary needs to access a key in that dictionary, use this as a keyword
+//Ex.
+this.key_name
+//whenever calling a method, use brackets
+```
+
+#### Getter and Setter
+
+- Setters are used to make sure that when a key is changed, the same datatype is entered  
+- An underscore is used to indicate that a key is not supposed to be modified by code directly  
+Ex. 
+```javascript
+  set key_name(new_key_value) {
+  
+}
+//in order to call the setter, just reset the key to a new value and the setter automatically runs
+//getter just extracts the value associated with a key and, therefore, does not need any perameters
+```
+
+### Class
+- Class like an object, but always has the constructor method
