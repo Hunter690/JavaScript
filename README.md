@@ -247,10 +247,45 @@ Ex.
 ```javascript
   set key_name(new_key_value) {
   
-}
+},
+//note the comma because still in object
 //in order to call the setter, just reset the key to a new value and the setter automatically runs
 //getter just extracts the value associated with a key and, therefore, does not need any perameters
+get set key_name() {
+  
+},
+//notice that get does not have any parameters
 ```
 
 ### Class
 - Class like an object, but always has the constructor method
+```javascript
+class ClassName {
+
+}
+//when calling an instance of a class, let var_name = new ClassName(parameters);
+//use getters and setters in classes as well
+set key_name(new_key_value) {
+  
+}
+get set key_name() {
+  
+}
+//notice the lack of commas
+```
+
+#### Class Inheritance
+
+- If there a multiple classes that use the have the same properties and methods, you can create
+a parent class and then create subclasses
+
+```javascript
+class subclass_name extends parent_class_name {
+  constructor(parameter_one...) {
+    super(name);
+  }
+}
+//extends makes the methods of the parent class available in the subclass
+//super calls the constructor form the parent class
+//always put the constructor method first
+
