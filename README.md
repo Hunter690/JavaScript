@@ -153,18 +153,16 @@ while (condition) {
 }
 ```
 
-### Data Structures
+### Arrays
 
-[Method Library](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
-
-`let array_name = [thing_one, thing_two, thing_n]; //creates an array with thing_one through thing_n;`
-`array_name[index] = new_value;`
-`.push()` adds items to the end of an array
-`.pop()` removes the last item of an array
-`.shift()` removes the first item of an array
-`.unshift()` adds element(s) to the beginning of an array
-`.slice(init_index, final_index)` creates a new array with the items from in between the index
-`.forEach()` executes the same code on each element of an array
+`let array_name = [thing_one, thing_two, thing_n]; //creates an array with thing_one through thing_n;`  
+`array_name[index] = new_value;`  
+`.push()` adds items to the end of an array  
+`.pop()` removes the last item of an array  
+`.shift()` removes the first item of an array  
+`.unshift()` adds element(s) to the beginning of an array  
+`.slice(init_index, final_index)` creates a new array with the items from in between the index  
+`.forEach()` executes the same code on each element of an array  
 Ex.
 
 ```javascript
