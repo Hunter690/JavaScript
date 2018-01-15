@@ -360,13 +360,31 @@ OR
 
 [$.post syntax](https://api.jquery.com/jquery.post/)
 
+#### Fetch
+
+##### Fetch() GET
+
+![alt text](https://user-images.githubusercontent.com/24757872/34965076-18a900fc-fa17-11e7-83a9-161b36469d4f.png)
+
 - Promise acts as a placeholder for incoming and outgoing data
 - fetch() function creates a request object, sends it to the URL provided in fetch(url), and returns a Promise to resolve a response object
 -.then() takes two callback functions as parameters
 1. The first callback function handles success
-- Takes response as parameter (the result from the Promise returned by fetch()
+- Takes response as parameter (the result from the Promise returned by fetch())
+- response => {} is just a function which can be replaced by function(parameter) {}
 - The .json() method takes information in response adn converts it to a JSON object
 - after the conditional, `throw new Error('Request failed!')` will run only if response.json() is not returned
 2. Second handles failure
 - Second callback function, the networkError message will be printed 
 - Once the response is converted to JSON, another `.then()` method handles the jsonResponse object
+
+##### Fetch() POST
+
+![alt text](
+
+- pass two objects into `fetch()`:
+1. URL
+2. settings object that includes the method, the body (data needed to send to the API)
+
+
+
