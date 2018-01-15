@@ -380,11 +380,12 @@ OR
 
 ##### Fetch() POST
 
-![alt text](
+![alt text](https://user-images.githubusercontent.com/24757872/34965565-737f3fb6-fa1a-11e7-95cd-af285b8770e4.png)
 
 - pass two objects into `fetch()`:
 1. URL
 2. settings object that includes the method, the body (data needed to send to the API)
+
 
 
 
