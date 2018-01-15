@@ -107,7 +107,7 @@ console.log('Turn off the lights!');
 ```
 ### Functions
 
-``javascript
+```javascript
 //Function expression is used to declare a function
 () => //arrow function syntax that indicates a variable will store a function
 let calculatorIsOn = false;
@@ -327,7 +327,7 @@ in a directory, and `lib` tells Babel to name the directory `lib`
 
 ### Requests
 
--Four types of request:
+- Four types of request:
 1. `GET` requests information from other sites by sending a query; like a search
 
 ![alt text](https://user-images.githubusercontent.com/24757872/34953576-d1b40554-f9e2-11e7-945c-7b6c632c634e.png)
