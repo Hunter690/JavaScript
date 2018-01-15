@@ -310,3 +310,8 @@ class subclass_name extends parent_class_name {
 }
 `
 - Above is added to .babelrc and tells Babel the version of code
+- Inside of the package.json, there is a `scripts` property
+- Inside of the `scripts` property, type `"build": "babel src -d lib"` where `src` tells Babel to
+transpile all the JavaScript code in the src director, `-d` tells Babel to write the new code
+in a directory, and `lib` tells Babel to name the directory `lib`
+`npm run build` runs the line and creates the new file
