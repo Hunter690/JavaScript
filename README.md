@@ -330,13 +330,22 @@ in a directory, and `lib` tells Babel to name the directory `lib`
 -Four types of request:
 1. `GET` requests information from other sites by sending a query; like a search
 
-[alt text](https://user-images.githubusercontent.com/24757872/34954781-57d0e680-f9e7-11e7-8880-da13d174e5ff.png)
+![alt text](https://user-images.githubusercontent.com/24757872/34953576-d1b40554-f9e2-11e7-945c-7b6c632c634e.png)
 
 OR
 
-[alt text](
+![alt text](https://user-images.githubusercontent.com/24757872/34954537-5b6664ce-f9e6-11e7-97fc-afc3bfb85424.png)
 
 OR
 
 `$.get('url', response => {...}, 'json');` where `response => {...}` is the success function
+
 2. `POST` requests change information on a site and receive the output
+
+![alt text](https://user-images.githubusercontent.com/24757872/34953592-e449936e-f9e2-11e7-9375-4b3ab9bf5f6f.png)
+
+OR
+
+![alt text](https://user-images.githubusercontent.com/24757872/34954781-57d0e680-f9e7-11e7-8880-da13d174e5ff.png)
+
+
