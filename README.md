@@ -288,4 +288,25 @@ class subclass_name extends parent_class_name {
 //extends makes the methods of the parent class available in the subclass
 //super calls the constructor form the parent class
 //always put the constructor method first
+```
 
+### Browser Compatibility
+[Can I use](https://caniuse.com/) is a website that provides web browser compatibility
+- Currently learned ES6 version of Javascript
+- Some browsers are still using ES5 version
+- Transpilation allows programs in one language to be converted into another
+- Babel converts ES6 into ES5
+`npm install babel-cli` installs one of the two required Babel packages
+`npm install babel-preset-env` installs the second required Babel package
+- Node pacakges are directories that contain JavaScript code that other people worte
+`npm init` creates a package.json file in the root directory which has information about the JavaScript project
+`install` creates a folder called node_modules that copies an installed package
+`npm install babel-cli -D` and `npm install babel-preset-env -D` installs the two main packages and a hundred other packages that those two packages depend on  
+- The `-D` tells npm to add each package to a property called devDependencies in package.json
+-Need to tell what version of the source JavaScript code
+`touch .babelrc` creates a file where I can define the preset for the source JavaScript file
+`{
+  "presets": ["env"]
+}
+`
+- Above is added to .babelrc and tells Babel the version of code
