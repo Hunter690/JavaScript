@@ -329,4 +329,14 @@ in a directory, and `lib` tells Babel to name the directory `lib`
 
 -Four types of request:
 1. `GET` requests information from other sites by sending a query; like a search
+
+[alt text](https://user-images.githubusercontent.com/24757872/34954781-57d0e680-f9e7-11e7-8880-da13d174e5ff.png)
+
+OR
+
+[alt text](
+
+OR
+
+`$.get('url', response => {...}, 'json');` where `response => {...}` is the success function
 2. `POST` requests change information on a site and receive the output
