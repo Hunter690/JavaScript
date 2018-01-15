@@ -327,7 +327,7 @@ in a directory, and `lib` tells Babel to name the directory `lib`
 
 ### Requests
 
-- Four types of request:
+- Two main types of request:
 1. `GET` requests information from other sites by sending a query; like a search
 
 ![alt text](https://user-images.githubusercontent.com/24757872/34953576-d1b40554-f9e2-11e7-945c-7b6c632c634e.png)
@@ -338,7 +338,11 @@ OR
 
 OR
 
-`$.get('url', response => {...}, 'json');` where `response => {...}` is the success function
+`$.get('url', response => {...}, 'dataType');` where `response => {...}` is the success function
+
+OR
+
+[$.getJSON() syntax](http://api.jquery.com/jquery.getjson/)
 
 2. `POST` requests change information on a site and receive the output
 
@@ -348,4 +352,10 @@ OR
 
 ![alt text](https://user-images.githubusercontent.com/24757872/34954781-57d0e680-f9e7-11e7-8880-da13d174e5ff.png)
 
+OR
 
+`$.post('url', {data}, response => {...}, 'dataType');`
+
+OR 
+
+[$.post syntax](https://api.jquery.com/jquery.post/)
