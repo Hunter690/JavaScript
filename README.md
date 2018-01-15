@@ -106,7 +106,7 @@ console.log('Turn off the lights!');
 ```
 ### Functions
 
-```javascript
+``javascript
 //Function expression is used to declare a function
 () => //arrow function syntax that indicates a variable will store a function
 let calculatorIsOn = false;
@@ -315,3 +315,11 @@ class subclass_name extends parent_class_name {
 transpile all the JavaScript code in the src director, `-d` tells Babel to write the new code
 in a directory, and `lib` tells Babel to name the directory `lib`
 `npm run build` runs the line and creates the new file
+
+### Modules
+
+- `Modules` are reusable pieces of code 
+- In order to create a reusable `module`:
+1. Create an `object`
+2. `Export` the module by `module.exports = object_name` OR `export default object_name` OR `export {variable_name, function_name}` OR put `export` before variable name OR `export {orig_name as new_name...}`
+3. `Import` the module by `const new_object_name = require('./file_name')` OR `import module_name from './file_name'` OR `import {variable_name...} from './file_name'`
