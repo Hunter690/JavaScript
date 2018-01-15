@@ -359,3 +359,14 @@ OR
 OR 
 
 [$.post syntax](https://api.jquery.com/jquery.post/)
+
+- Promise acts as a placeholder for incoming and outgoing data
+- fetch() function creates a request object, sends it to the URL provided in fetch(url), and returns a Promise to resolve a response object
+-.then() takes two callback functions as parameters
+1. The first callback function handles success
+- Takes response as parameter (the result from the Promise returned by fetch()
+- The .json() method takes information in response adn converts it to a JSON object
+- after the conditional, `throw new Error('Request failed!')` will run only if response.json() is not returned
+2. Second handles failure
+- Second callback function, the networkError message will be printed 
+- Once the response is converted to JSON, another `.then()` method handles the jsonResponse object
