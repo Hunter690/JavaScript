@@ -1,4 +1,5 @@
 # JavaScript
+
 Learning to build and design website
 
 ## General Notes
@@ -323,3 +324,9 @@ in a directory, and `lib` tells Babel to name the directory `lib`
 1. Create an `object`
 2. `Export` the module by `module.exports = object_name` OR `export default object_name` OR `export {variable_name, function_name}` OR put `export` before variable name OR `export {orig_name as new_name...}`
 3. `Import` the module by `const new_object_name = require('./file_name')` OR `import module_name from './file_name'` OR `import {variable_name...} from './file_name'`
+
+### Requests
+
+-Four types of request:
+1. `GET` requests information from other sites by sending a query; like a search
+2. `POST` requests change information on a site and receive the output
