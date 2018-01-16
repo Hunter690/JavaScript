@@ -388,12 +388,16 @@ OR
 
 #### ES7 Async and Await
 
+##### async and await GET
+
 ![alt text](https://user-images.githubusercontent.com/24757872/34968210-afa5d44c-fa2d-11e7-9eff-1780143beb4f.png)
 
 `async` introduces a function that will return a Promise
 `try` uses `fetch()` to send a request to the URL used; the `fetch()` functionc creates a request object and returns a Promise
 `await` moves through the message queue while the Promise gets collected in `response`
 
+##### async and await POST
 
+![alt text](https://user-images.githubusercontent.com/24757872/34968463-0a099d32-fa2f-11e7-9673-78b8cb0f1742.png)
 
-
+- Inside the `fetch()` function, the settings object includes the method and body of request
