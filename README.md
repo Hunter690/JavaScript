@@ -386,6 +386,12 @@ OR
 1. URL
 2. settings object that includes the method, the body (data needed to send to the API)
 
+#### ES7 Async and Await
+
+`async` introduces a function that will return a Promise
+`try` uses `fetch()` to send a request to the URL used; the `fetch()` functionc creates a request object and returns a Promise
+`await` moves through the message queue while the Promise gets collected in `response`
+
 
 
 
